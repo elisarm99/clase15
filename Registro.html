@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="AgustinFedericoRomero,Sarmiento Eliana Elizabeth">
+	<link rel="short cut icon" type="image/x-icon" href="img/sigsalogo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="author" content="Sarmiento Eliana- Romero Agustin">
+    <meta name="copyright" content="© 2023 SIGSA">
+	<link rel="stylesheet" type="text/css" href="estilos1.css">
+	<title>Accede/Registrate-SIGSA</title>
+</head>
+<body>
+    <header>
+            <nav class=" col-md-12" id="header">
+                <a href="bootr.html"><img src="img/logo.png" class="img-fluid" id="logo"></a>
+                <h2 id="nombre"><a href="bootr.html" title="Ir a Inicio">SIGSA</a></h2>
+                <ul id="menu"> 
+                    <input class="control" type="buscar" placeholder="Buscar" aria-label="buscar" id="search">
+                    <a href="productos.html" id="busqueda">Buscar</a>
+                    <li class="lista1">
+                        <img src="img/tag.png">
+                        <a href="">Productos</a>
+                        <ul>
+                            <li><a href="">Bebidas</a></li>
+                            <li><a href="">Snacks</a></li>
+                            <li><a href="">Comidas</a></li>
+                        </ul>
+                    </li>
+                    <li class="lista1" id="iniciar">
+                        <img src="img/registro.png">
+                        <a href="Registro.html">registrarme/acceder</a>
+                    </li>
+                    <li class="lista1">
+                        <img src="img/nosotros.png">
+                        <a href="#description">Nosotros</a>
+                    </li>
+                </ul>
+                <a href="encuesta.html">
+                    <img src="img/encuesta.png" id="encuestas" title="Encuestas">
+                </a>
+                <a href="">
+                    <img src="img/compras.png" id="carrito" title="Carrito">
+                </a>
+            </nav>
+        </header>
+        <section id="form1" class="user">
+            <div id="accede" class="formularios">
+                <h5 class="init">registrarme</h5>
+                <form id="regis">
+                    <label id="name">Nombre *</label>
+                    <input type="text" name="Nombre" placeholder="Nombre completo" required><br>
+                    <label class="primer">Apellido *</label>
+                    <input type="text" name="apl" placeholder="Apellido" required><br>
+                    <label id="provincias" class="primer">Provincia *</label>
+                     <select name="prov" id="provincias">
+                        <option>------</option>
+                        <option>San Luis</option>
+                        <option>Córdoba</option>
+                        <option>Jujuy</option>
+                        <option>La Rioja</option>
+                        <option>Misiones</option>
+                        <option>Buenos Aires</option>
+                        <option>Chaco</option>
+                        <option>Santa Cruz</option>
+                        <option>La Pampa</option>
+                        <option>Entre Ríos</option>
+                        <option>Santa Fe</option>
+                        <option>Mendoza</option>
+                        <option>Tucumán</option>
+                        <option>Salta</option>
+                        <option>Corrientes</option>
+                        <option>San Juan</option>
+                        <option>Otros</option>
+                        
+                     </select> <br>
+                    <label class="primer">Username *</label>
+                    <input type="text" name="username" placeholder="Nombre de Usuario" required><br>
+                    <label class="primer">Correo Electrónico *</label>
+                    <input type="email" name="correo" placeholder="ejemplo@gmail.com" required><br>
+                    <label class="primer">Contraseña *</label>
+                    <input type="password" name="pass" placeholder="------" required><br>
+                    <label class="primer">Repita Contraseña *</label>
+                    <input type="password" name="repit" placeholder="------" required><br>
+                    <button id="enviar" location="bootr.html">Enviar</button>
+                </form>
+            </div>
+            <div id="registrarme" class="formularios">
+                <h5 class="init">acceder</h5>
+                <form>
+                    <label class="primer">Username *</label>
+                    <input type="text" name="nombre" placeholder="Nombre de Usuario" required><br>
+                    <label class="primer">Contraseña *</label>
+                    <input type="password" name="contraseña de usuario" placeholder="" required> <br>
+                    <label class="primer" id="check">Recuerdame</label>
+                    <input type="checkbox" name="Recordar" class="primer">
+                    <label></label>
+                    <button name="redirect" id="cuenta">
+                            Enviar
+                    </button> 
+                </form>
+                
+            </div>
+        </section>
+
+
+
+
+	<!--<section id="containregis">
+        <div id="contain1" class="formulario">
+            <h4 id="init1" class="init">ACCEDER</h4>
+            <div id="form">
+            <form action="#" method="post">
+                <label for="Nombre" class="usr1">Nombre de usuario o correo electrónico *</label>
+                <input type="text" name="Usuario" class="usr1" > <br> <br>
+                <label for="Contraseña" class="pass1">Contraseña</label>
+                <input type="password" name="Contraseña" class="pass1"><br>
+                <input type="submit" name="ACCEDER" id="enviar" value="ACCEDER">
+            </form>
+            </div>
+        </div>
+         <div id="contain2" class="formulario">
+            <h4 id="init" class="init">REGISTRARME</h4>
+            <div id="form2">
+            <form action="#" method="post">
+                <input type="text" placeholder="Nombre y apellido" name="" id="nom"> <br>
+                 <input type="text" placeholder="Email" name="" id="email"> <br>
+                  <input type="password" placeholder="Contraseña" id="cont"> <br>
+                  <input type="password" placeholder="Confirmar contraseña" id="cont2"> <br>
+                  <h6>Marcar sistema operativo</h6>
+               	<input type="sistema operativo" type="checkbox" value="Window">
+               	<input type="sistema operativo" type="checkbox" value="Mac">
+               	<input type="sistema operativo" type="checkbox" value="Linux"> <br> <br>
+               	<label id="dispositivo">Que dispositivo dispone</label>
+				<select name="product" id="product">
+					<option>Movil</option>
+					<option>Pc</option>
+					<option>Tablets/otros</option>
+				</select> <br>
+                  <input type="submit" name="Registrarme" value="Registrarme" id="reg">
+            </form>
+            </div>
+    </section>-->
+    <footer>
+        <div id="final">
+            <img src="img/logo.png" id="imgfin">
+            <h3>SIGSA</h3>
+            <h6 class="ache" id="description">Nosotros</h6>
+            <p id="tienda">Somos una tienda virtual que ofrece<br>
+            productos extranjeros de calidad las<br> 24 horas del día. </p>
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram.png" class="redes"  id="insta">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="img/facebook.png" id="facebook" class="redes">
+            </a>
+            <h6 id="modo" class="ache">Modo de pago</h6>
+            <p id="tarjeta">Se aceptan tranferencias, tarjetas<br> de debito y crédito. También pueden<br> contactarnos al +12 345 678</p>
+            <img src="img/tarjeta.png" id="credito" class="pago"> 
+            <img src="img/telefono.png" id="telefono" class="pago">
+            <img src="img/wht.png" id="wpp" class="pago" width="25px" height="25px">
+            <h6 class="ache" id="ubi">Ubicación</h6>
+            <p id="lr">La Rioja- Capital<br>Av. Rivadavia 123<br>Frente a La Vieja Casona</p>
+            <img src="img/ubicacion.png" id="ubic">
+            <p id="copy">Copyright © 2023 SIGSA | All rigts reserved</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

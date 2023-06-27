@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="short cut icon" type="image/x-icon" href="img/sigsalogo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<meta name="author" content="Sarmiento Eliana- Romero Agustin">
+	<meta name="copyright" content="© 2023 SIGSA">
+	<link rel="stylesheet" type="text/css" href="estilos2.css">
+	<title>Encuesta-SIGSA</title>
+</head>
+<body>
+	<header>
+		<nav class=" col-md-12" id="header">
+			<a href="bootr.html"><img src="img/logo.png" class="img-fluid" id="logo"></a>
+			<h2 id="nombre"><a href="bootr.html" title="Ir a Inicio">SIGSA</a></h2>
+			<ul id="menu"> 
+			    <input class="control" type="buscar" placeholder="Buscar" aria-label="buscar">
+			    <a href="productos.html" id="busqueda">Buscar</a>
+				<li class="lista1">
+					<img src="img/tag.png">
+					<a href="">Productos</a>
+					<ul>
+						<li><a href="">Bebidas</a></li>
+						<li><a href="">Snacks</a></li>
+						<li><a href="">Comidas</a></li>
+					</ul>
+				</li>
+				<li class="lista1" id="iniciar">
+					<img src="img/registro.png">
+					<a href="Registro.html">registrarme/acceder</a>
+				</li>
+				<li class="lista1">
+					<img src="img/nosotros.png">
+					<a href="#description">Nosotros</a>
+				</li>
+			</ul>
+			<a href="encuesta.html">
+				<img src="img/encuesta.png" id="encuestas" title="Encuestas">
+			</a>
+			<a href="">
+				<img src="img/compras.png" id="carrito" title="Carrito">
+			</a>
+		</nav>
+	</header>
+	<section id="minutos">
+		<div id="descripcion">
+			<p id="texto">Dedique unos minutos a completar esta pequeña encuesta.<br>
+			Sus respuestas serán tratadas de forma confidencial y serán utilizadas únicamente para mejorar<br> el servicio que le proporcionamos.</p>
+		</div>
+	</section>
+	<section id="form1" class="user">
+        <div id="" class="test">
+            <h5 class="form">encuesta 1</h5>
+            <form>
+	            <label for="encuesta" id="ellos" class="primer">¿Los envios llegan en tiempo y forma?</label>  <br>
+				<input type="radio" name="cliente" class="option" value="Si" checked="checked">Si
+				<input type="radio" name="cliente" class="option" value="No" checked="checked">No<br>	
+				<label for="encuesta" id="ellos" class="primer">¿Considera que la atencion es buena?</label> <br>
+				<input type="radio" name="cliente" id="yes" class="option" value="Si" checked="checked">Si
+				<input type="radio" name="cliente" id="no" class="option" value="No" checked="checked">No	<br> 
+				<label id="consumo" class="primer">Productos que mas consume</label><br>
+				<select name="productos" id="productos" class="resp1">
+					<option>Pocky/Pepero</option>
+					<option>Sake japones</option>
+					<option>Kimchi</option>
+					<option>Soju</option>
+					<option>Ramen</option>
+					<option>Alfajores</option>
+					<option>Otros</option>
+				</select> <br>
+				<label for="encuesta" id="ellos" class="primer">Adquiere los productos de manera...</label>  <br>
+				<input type="radio" name="envio" class="resp1" value="Presencial" checked="checked">Presencial
+				<input type="radio" name="envio" class="resp1" value="Delivery" checked="checked">Delivery	<br>
+				<label id="product" class="primer">En su opinión considera a los productos</label><br>
+				<input list="opciones" name="Opinión" placeholder="Opinión" id="product">
+				<datalist id="opciones">
+					<option>Excelentes</option>
+					<option>Muy buenos</option>
+					<option>Buenos</option>
+					<option>No tan buenos</option>
+					<option>Malos</option>
+				</datalist><br>
+				<label for="comentario" id="comentario" class="primer">Escribe una opinion acerca del servicio<br> y cosas que podriamos mejorar:
+				</label><br>
+				<textarea name="comentario" id="comentar" placeholder="Comentarios" cols="30" rows="5">	
+				</textarea>
+	            </form>
+            </div>
+            <div id="registrarme" class="test">
+                <h5 class="form">encuesta 2</h5>
+                <form id="confidencial">
+					<label class="primer" id="recomendacion">¿Con qué probabilidad recomendarías SIGSA a un amigos/familiar?</label><br>
+					<input type="checkbox" name="probable" class="recomendation">Siempre los recomiendo
+					<input type="checkbox" name="probable" class="recomendation">Muy probable
+					<input type="checkbox" name="probable" class="recomendation">Probable
+					<input type="checkbox" name="probable" class="recomendation">Aún no me convence
+					<input type="checkbox" name="probable" class="recomendation">Poco Probable
+					<input type="checkbox" name="probable" class="recomendation">Muy poco probable
+				</form>
+                
+            </div>
+        </section>
+	<!--<section id="seccont" class="encu12">
+		<div id="form">
+			<h2 id="clientes">Encuenta Clientes</h2>
+			<form action="#" method="post" id="formulario">
+				<label for="encuesta" id="ellos">¿Los envios llegan en tiempo y forma? <br>
+				<input type="radio" name="cliente" id="resp1" value="Si" checked="checked">Si
+				<input type="radio" name="cliente" id="resp1" value="No" checked="checked">No	
+				</label> <br>
+				<label for="encuesta" id="ellos">¿Considera que la atencion es buena? <br>
+				<input type="radio" name="cliente" id="resp1" value="Si" checked="checked">Si
+				<input type="radio" name="cliente" id="resp1" value="No" checked="checked">No	
+				</label> <br>
+				<label id="consumo">Productos que mas consume</label><br>
+				<select name="productos" id="productos">
+					<option>Pocky/Pepero</option>
+					<option>Sake japones</option>
+					<option>Kimchi</option>
+					<option>Soju</option>
+					<option>Ramen</option>
+					<option>Alfajores</option>
+					<option>Otros</option>
+				</select> <br>
+				<label for="encuesta" id="ellos">¿Adquiere los productos de manera? <br>
+				<input type="radio" name="envio" id="resp1" value="Presencial" checked="checked">Presencial
+				<input type="radio" name="envio" id="resp1" value="Delivery" checked="checked">Delivery	
+				</label> <br>
+				<label id="product">En su opinión considera a los productos</label><br>
+				<input list="opciones" name="Opinión" placeholder="Opinión" id="product">
+					<datalist id="opciones">
+						<option>Excelentes</option>
+						<option>Muy buenos</option>
+						<option>Buenos</option>
+						<option>No tan buenos</option>
+						<option>Malos</option>
+					</datalist><br>
+				<label for="comentario" id="comentario">Escribe una opinion acerca del servicio<br> y cosas que podriamos mejorar:
+				</label><br>
+				<textarea name="comentario" id="comentar" placeholder="Comentarios" cols="30" rows="5">	
+				</textarea>
+				<input type="submit" for="enviar" value="Enviar" id="env">
+			</form>		
+		</div>
+		
+	</section>
+	<section class="encu12">
+		<div id="attention">
+			<h2>encuesta 2</h2>
+			
+		</div>
+	</section>-->
+	<footer>
+		<div id="final">
+			<img src="img/logo.png" id="imgfin">
+			<h3>SIGSA</h3>
+			<h6 class="ache" id="description">Nosotros</h6>
+			<p id="tienda">Somos una tienda virtual que ofrece<br> productos extranjeros de calidad las<br> 24 horas del día. </p>
+			<a href="https://www.instagram.com/">
+				<img src="img/instagram.png" class="redes"  id="insta">
+			</a>
+			<a href="https://www.facebook.com/">
+				<img src="img/facebook.png" id="facebook" class="redes">
+			</a>
+			<h6 id="modo" class="ache">Modo de pago</h6>
+			<p id="tarjeta">Se aceptan tranferencias, tarjetas<br> de debito y crédito. También pueden<br> contactarnos al +12 345 678</p>
+			<img src="img/tarjeta.png" id="credito" class="pago">
+			<img src="img/telefono.png" id="telefono" class="pago">
+			<img src="img/wht.png" id="wpp" class="pago" width="25px" height="25px">
+			<h6 class="ache" id="ubi">Ubicación</h6>
+			<p id="lr">La Rioja- Capital<br>Av. Rivadavia 123<br>Frente a La Vieja Casona</p>
+			<img src="img/ubicacion.png" id="ubic">
+			<p id="copy">Copyright © 2023 SIGSA | All rigts reserved</p>
+		</div>
+	</footer>
+
+</body>
+</html>
